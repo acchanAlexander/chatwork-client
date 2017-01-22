@@ -19,7 +19,9 @@ const chatwork = {
 
     request.get(options, (error, response, body) => {
       if (!error && response.statusCode === 200) {
-        callback(body);
+        if (callback !== undefined) {
+          callback(body);
+        }
       } else {
         console.log('error: '+ response.statusCode);
       }
@@ -40,7 +42,9 @@ const chatwork = {
       if (!error && response.statusCode === 200) {
         console.log('postRoomMessage');
         console.log(body);
-        callback(body);
+        if (callback !== undefined) {
+          callback(body);
+        }
       } else {
         console.log('error: '+ response.statusCode);
       }
