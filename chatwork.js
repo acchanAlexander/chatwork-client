@@ -40,8 +40,6 @@ const chatwork = {
 
     request.post(options, (error, response, body) => {
       if (!error && response.statusCode === 200) {
-        console.log('postRoomMessage');
-        console.log(body);
         if (callback !== undefined) {
           callback(body);
         }
