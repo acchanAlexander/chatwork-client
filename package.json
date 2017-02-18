@@ -1,14 +1,26 @@
 {
-  "name": "chatwork-api-v2",
+  "name": "chatwork-client",
   "version": "1.0.1",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "acchanAlexander",
   "license": "ISC",
   "dependencies": {
     "request": "^2.79.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acchanAlexander/chatwork-client.git"
+  },
+  "keywords": [
+    "chatwork"
+  ],
+  "bugs": {
+    "url": "https://github.com/acchanAlexander/chatwork-client/issues"
+  },
+  "homepage": "https://github.com/acchanAlexander/chatwork-client#readme",
+  "description": ""
 }
