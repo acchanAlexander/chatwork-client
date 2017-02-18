@@ -46,7 +46,10 @@ chatwork.postRoomMessages()
 
 ```
 setInterval(() => {
-  chatwork.getRoomMessages(doSomething);
+  chatwork.getRoomMessages()
+    .then((data) => {
+      doSomething(data);
+    });
 }, 5000);
 ```
 
