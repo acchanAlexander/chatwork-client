@@ -19,7 +19,7 @@ install this module in your repository.
 
 ```
 'use strict'
-const chatwork = require('./chatwork-client');
+const chatwork = require('chatwork-client');
 
 // set parameters.
 let chatworkParams = {
