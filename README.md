@@ -7,6 +7,9 @@ you can separate chatwork-client entity from main code.
 
 this module return Promise.
 
+this module use chatwork api v2.  
+about "chatwork api v2": http://support-en.chatwork.com/hc/en-us/articles/115000511946-01-26-2017-Chatwork-API-Update-Notice
+
 # How to use
 
 ## Setup
