@@ -17,7 +17,7 @@ install this module in your repository.
 
 ```npm install chatwork-client --save```
 
-## Example code
+## Sample code
 ### post message.
 
 ```
@@ -45,6 +45,28 @@ chatwork.postRoomMessages()
   });
 ```
 
+### get my tasks.
+
+```
+let chatworkParams = {
+      chatworkToken: YOUR_TOKEN,
+      apiParams: {
+        assigned_by_account_id: 123456,
+        status: "done",
+      }
+    };
+
+chatwork.init(chatworkParams);
+
+chatwork.getMyTasks()
+  .then((data)=>{
+    doSomething(data);
+  })
+  .catch((err)=>{
+    console.log(err);
+  });
+```
+
 ### monitoring message
 
 ```
@@ -60,3 +82,26 @@ setInterval(() => {
 if you monitoring message.
 you continue to request chatwork api.
 be careful over request limit.
+
+# APIs
+## getMe()
+#### need params
+- chatworkToken: YOUR_TOKEN
+## getMyStatus()
+#### need params
+- chatworkToken: YOUR_TOKEN
+## getMyTasks()
+#### need params
+- chatworkToken: YOUR_TOKEN
+- apiParams:
+  - assigned_by_account_id: 123456
+  - status: "{done | open}"
+## getRoomMessages()
+#### need params
+- chatworkToken: YOUR_TOKEN
+- roomId: ROOM_ID
+## postRoomMessages()
+#### need params
+- chatworkToken: YOUR_TOKEN
+- roomId: ROOM_ID
+- msg: 'Hello, i using chatwork-client'
