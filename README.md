@@ -84,22 +84,30 @@ you continue to request chatwork api.
 be careful over request limit.
 
 # APIs
+
 ## getMe()
 #### need params
 - chatworkToken: YOUR_TOKEN
+
+
 ## getMyStatus()
 #### need params
 - chatworkToken: YOUR_TOKEN
+
+
 ## getMyTasks()
 #### need params
 - chatworkToken: YOUR_TOKEN
 - apiParams:
   - assigned_by_account_id: 123456
   - status: "{done | open}"
+
+
 ## getRoomMessages()
 #### need params
 - chatworkToken: YOUR_TOKEN
 - roomId: ROOM_ID
+
 ## postRoomMessages()
 #### need params
 - chatworkToken: YOUR_TOKEN
