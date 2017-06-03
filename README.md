@@ -103,10 +103,16 @@ be careful over request limit.
   - status: "{done | open}"
 
 
+## getContacts()
+#### need params
+- chatworkToken: YOUR_TOKEN
+
+
 ## getRoomMessages()
 #### need params
 - chatworkToken: YOUR_TOKEN
 - roomId: ROOM_ID
+
 
 ## postRoomMessages()
 #### need params
