@@ -108,6 +108,11 @@ be careful over request limit.
 - chatworkToken: YOUR_TOKEN
 
 
+## getRooms()
+#### need params
+- chatworkToken: YOUR_TOKEN
+
+
 ## getRoomMessages()
 #### need params
 - chatworkToken: YOUR_TOKEN
