@@ -86,41 +86,42 @@ be careful over request limit.
 # APIs
 
 ## getMe()
-#### need params
+#### require params
 - chatworkToken: YOUR_TOKEN
 
 
 ## getMyStatus()
-#### need params
+#### require params
 - chatworkToken: YOUR_TOKEN
 
 
 ## getMyTasks()
-#### need params
+#### require params
 - chatworkToken: YOUR_TOKEN
+#### optional params
 - apiParams:
   - assigned_by_account_id: 123456
   - status: "{done | open}"
 
 
 ## getContacts()
-#### need params
+#### require params
 - chatworkToken: YOUR_TOKEN
 
 
 ## getRooms()
-#### need params
+#### require params
 - chatworkToken: YOUR_TOKEN
 
 
 ## getRoomMessages()
-#### need params
+#### require params
 - chatworkToken: YOUR_TOKEN
 - roomId: ROOM_ID
 
 
 ## postRoomMessages()
-#### need params
+#### require params
 - chatworkToken: YOUR_TOKEN
 - roomId: ROOM_ID
 - msg: 'Hello, i using chatwork-client'
